@@ -1,0 +1,13 @@
+{% extends 'todo/base.html' %} 
+
+
+{% block content %}
+{% load crispy_forms_tags %}
+<h2>TODO Delete</h2>
+<hr>
+<form action="" method="POST">
+    {% csrf_token %}
+    Are you sure for delete {{todo}}
+    
+</form>
+{% endblock content %}

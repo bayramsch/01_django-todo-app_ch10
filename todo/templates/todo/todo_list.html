@@ -1,0 +1,15 @@
+{% extends 'todo/base.html' %} 
+
+
+{% block content %}
+{% load crispy_forms_tags %}
+
+<h2>TODO List</h2>
+<hr>
+{% for todo in todos %}
+<ul style="list-style-type: none;">
+<a href="{% url 'update' todo.id %}"><button>Go to Update</button></a>
+<li >{{todo}}</li>
+</ul>
+{% endfor %}
+{% endblock content %}

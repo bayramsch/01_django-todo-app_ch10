@@ -1,0 +1,17 @@
+{% extends 'todo/base.html' %} 
+
+
+{% block content %}
+{% load crispy_forms_tags %}
+
+<h2>
+    <center>
+        Welcome To TODO App <br> (Backend Team)
+        <hr>
+        <button><a href="{% url 'add' %}">ADD</a></button>
+        <a href="{% url 'list' %}"><button>LIST</button></a>
+    </center>
+
+</h2>
+
+{% endblock content %}

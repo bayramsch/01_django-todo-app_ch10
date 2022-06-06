@@ -1,0 +1,19 @@
+{% extends 'todo/base.html' %} 
+
+
+{% block content %}
+
+<h2>TODO Update</h2>
+<hr>
+
+
+<form action="" method="POST">
+    {% load crispy_forms_tags %}
+    {% csrf_token %}
+    {{ form|crispy }}
+    <input type="submit" value="add">
+</form>
+
+
+
+{% endblock content %}
